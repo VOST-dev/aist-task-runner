@@ -1,0 +1,3 @@
+#!/bin/bash
+
+docker run --rm -v $(pwd):/home/matlab/Documents/MATLAB -v /licenses/network.lic:/licenses/network.lic -e MLM_LICENSE_FILE=/licenses/network.lic --mac-address 02:42:c0:a8:d7:02 mathworks/matlab:r2024b -batch $1
